@@ -26,7 +26,7 @@ We can use the DNT (Do Not Track) header to fix this issue.
 
 This one tricked me for some time, I tried all kinds of different methods to solve this.
 We get the message "This website is only for people from Sweden."
-To fix this issue, we need to use the X-Forwarded-For header that changes the IP that the site receives - we need to find an IP in sweden (just google it).
+To fix this issue, we need to use the X-Forwarded-For header that changes the IP that the site receives - we need to find an IP in Sweden (just google it).
 
 *X-Forwarded-For: 31.15.63.255*
 
