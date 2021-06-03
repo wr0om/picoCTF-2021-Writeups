@@ -31,7 +31,7 @@ To fix this issue, we need to use the X-Forwarded-For header that changes the IP
 *X-Forwarded-For: 31.15.63.255*
 
 Finally, we get this message "You're in Sweden but you don't speak Swedish?"
-This one's easy, you have to change the Accept-Language header, if you look online you can find the shortcut for the Swedish language code - sv-SE.
+This one's easy, you have to change the Accept-Language header, if you look online you can find the Swedish language code - sv-SE.
 
 *Accept-Language: sv-SE*
 
