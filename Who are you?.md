@@ -2,6 +2,7 @@ This one is in the web exploitation category and requires tinkering with the pac
 This we can do manually with the curl command or with a proxy like Burp Suite.
 
 First, we are presented with the message: "Only people who use the official PicoBrowser are allowed on this site!"
+
 We can guess that we just need to change the user agent header to "PicoBrowser" - and it works.
 *User-Agent: PicoBrowser*
 
@@ -11,32 +12,22 @@ Second, we are presented with the message: "I don't trust users visiting from an
 We can change the Referer header (yes with 1 r) to the website itself - and it works.
 *Referer: http://mercury.picoctf.net:34588*
 
-![image](https://user-images.githubusercontent.com/59180254/120638863-5caf2080-c479-11eb-961d-6393f72e2413.png)
-
 Next, we get the message "Sorry, this site only worked in 2018.".
 We can change the time and date of the request with the Date header.
 *Date: Tue, 15 Nov 2018 08:12:31 GMT*
 
-![image](https://user-images.githubusercontent.com/59180254/120638927-7486a480-c479-11eb-8891-943b78fe372e.png)
-
 Then, we get the message "I don't trust users who can be tracked."
 We can use the DNT (Do Not Track) header to fix this issue.
 *DNT: 1*
-
-![image](https://user-images.githubusercontent.com/59180254/120638952-7fd9d000-c479-11eb-9ffc-effae75524e2.png)
 
 This one tricked me for some time, I tried all kinds of different methods to solve this.
 We get the message "This website is only for people from Sweden."
 To fix this issue, we need to use the X-Forwarded-For header that changes the IP that the site receives - we need to find an IP in sweden (just google it).
 *X-Forwarded-For: 31.15.63.255*
 
-![image](https://user-images.githubusercontent.com/59180254/120638992-8cf6bf00-c479-11eb-96e7-73effbb732b0.png)
-
 Finally, we get this message "You're in Sweden but you don't speak Swedish?"
 This one's easy, you have to change the Accept-Language header, if you look online you can find the shortcut for the Swedish language code - sv-SE.
 *Accept-Language: sv-SE*
-
-![image](https://user-images.githubusercontent.com/59180254/120639026-9849ea80-c479-11eb-9612-ac8f5c218531.png)
 
 
 Final request (in Burp):
