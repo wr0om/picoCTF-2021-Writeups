@@ -5,7 +5,7 @@ First, we are presented with a .jpeg file. A picture of a cat.
 The hint for this challenge was: "Look at the details of the file".
 So, the first thing I thought of was to look at the file's exif data.
 
-I used [this](https://www.exifdata.com/exif.php) site to check the data (you could also use exiftool but I was lazy).
+I used [this](https://www.exifdata.com) site to check the data (you could also use exiftool but I was lazy).
 
 We get this information
 
