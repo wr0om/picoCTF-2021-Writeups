@@ -3,6 +3,7 @@
 * [The Challenge Description](#the-challenge-description)
 * [Hint](#hint)
 * [Solving It](#solving-it)
+* [The Flag](#the-flag)
 
 ## Intoduction
 This one was my favorite challenge out of all of the challenges in this competition.
@@ -37,7 +38,7 @@ After googling it, we find that a CNC machine is some kind of an industrial 3D p
 When googling G-Code, we see it's the code we recieved from the netcat above, this code will probably build out the flag.
 
 We need to search for a program/site that can run G-Code and preview its content to us.
-I found the site [NCViewer](https://ncviewer.com/) that can run the G-Code and display it in a 3D plane.
+I found the site [NCViewer](https://ncviewer.com/) that can run the G-Code and display it on a 3D plane.
 
 After saving the netcat's content into a file, I copied the G-Code from the file I created using xclip.
 ```
@@ -48,5 +49,6 @@ Then, I pasted it into ncviewer and got this image/3D model, amazing:
 
 ![image](https://user-images.githubusercontent.com/59180254/120991386-3f849580-c78a-11eb-8d67-44e6207a46e1.png)
 
-After typing out the flag: picoCTF{num3r1cal_c0ntr0l_e7749028}
+## The Flag
+After typing out the flag: **picoCTF{num3r1cal_c0ntr0l_e7749028}**
 
