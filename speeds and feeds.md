@@ -1,4 +1,4 @@
-## Table of contents
+## Table Of Content
 * [Intoduction](#intoduction)
 * [The Challenge Description](#the-challenge-description)
 * [Hint](#hint)
