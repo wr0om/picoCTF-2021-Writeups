@@ -45,10 +45,10 @@ After saving the netcat's content into a file, I copied the G-Code from the file
 $ nc mercury.picoctf.net 33596 > lol.txt
 $ xclip -sel c < lol.txt
 ```
-Then, I pasted it into ncviewer and got this image/3D model, amazing:
+Then, I pasted it into ncviewer and got this image/3D model (**amazing**):
 
 ![image](https://user-images.githubusercontent.com/59180254/120991386-3f849580-c78a-11eb-8d67-44e6207a46e1.png)
 
 ## The Flag
-After typing out the flag: **picoCTF{num3r1cal_c0ntr0l_e7749028}**
+After typing out the flag: ***picoCTF{num3r1cal_c0ntr0l_e7749028}***
 
