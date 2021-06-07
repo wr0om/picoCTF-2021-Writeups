@@ -1,3 +1,9 @@
+## Table of contents
+* [Intoduction](#intoduction)
+* [The Challenge Description](#the-challenge-description)
+* [Hint](#hint)
+* [Solving It](#solving-it)
+
 ## Intoduction
 This one was my favorite challenge out of all of the challenges in this competition.
 
@@ -31,7 +37,7 @@ After googling it, we find that a CNC machine is some kind of an industrial 3D p
 
 When googling G-Code, we see it's the code we recieved from the netcat above, this code will probably build out the flag.
 
-We need to search for a program/site that can run G-Code and preview its content to us
+We need to search for a program/site that can run G-Code and preview its content to us.
 
 I found the site [NCViewer](https://ncviewer.com/) that can run the G-Code and display it in a 3D plane.
 
