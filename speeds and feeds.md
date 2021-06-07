@@ -35,7 +35,7 @@ G1X199.0345Y0.2759
 Let's think back to our hint, what is a CNC machine?
 
 After googling it, we find that a CNC machine is some kind of an industrial 3D printer that uses *G-Code*.
-When googling G-Code, we see it's the code we recieved from the netcat above, this code will probably build out the flag.
+When googling G-Code, we see it's the code we received from the netcat above, this code will probably build out the flag.
 
 We need to search for a program/site that can run G-Code and preview its content to us.
 I found the site [NCViewer](https://ncviewer.com/) that can run the G-Code and display it on a 3D plane.
